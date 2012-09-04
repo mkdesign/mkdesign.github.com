@@ -1,4 +1,4 @@
-.clear{
+.clear {
 	clear      : both;
 	width      : 0 !important;
 	height     : 0 !important;
@@ -9,15 +9,48 @@
 	border     : 0 none !important;
 }
 
-.container{
-	background-image: url('images/home_bg.jpg');
-	min-height: 1000px;
+.container {
+	background-image : url('images/home_bg.jpg');
+	padding-top      : 290px;
 }
 
-article{
-	font-family: Helvetica, arial, freesans, clean, sans-serif;
-	color: white;
-	font-size: 110px;
-	font-weight: 200;
-	letter-spacing: 2px;
+article p.about {
+	font-family    : Helvetica, arial, freesans, clean, sans-serif;
+	color          : white;
+	font-size      : 90px;
+	font-weight    : 200;
+	letter-spacing : 2px;
+	margin-bottom  : 30px;
+	padding-left   : 20px;
+
 }
+
+section.social-hubs {
+	background-color : black;
+	padding     : 20px 0px 10px 20px;
+}
+
+section.social-hubs ul li {
+	float : left;
+}
+
+section.social-hubs ul li a {
+	display          : block;
+	width            : 48px;
+	height           : 48px;
+	margin-right     : 20px;
+	background-color : red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
