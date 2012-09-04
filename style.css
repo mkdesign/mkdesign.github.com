@@ -11,7 +11,11 @@
 
 .container {
 	background-image : url('images/home_bg.jpg');
-	padding-top      : 290px;
+	padding-top      : 210px;
+}
+
+article p.about span {
+	font-size : 70px;
 }
 
 article p.about {
@@ -20,14 +24,14 @@ article p.about {
 	font-size      : 90px;
 	font-weight    : 200;
 	letter-spacing : 2px;
-	margin-bottom  : 30px;
+	margin-bottom  : 40px;
 	padding-left   : 20px;
-
+	text-transform : capitalize;
 }
 
 section.social-hubs {
-	background-color : black;
-	padding     : 20px 0px 10px 20px;
+	background-image : url('images/bg_noise.png');
+	padding          : 10px 0px 10px 20px;
 }
 
 section.social-hubs ul li {
@@ -35,22 +39,48 @@ section.social-hubs ul li {
 }
 
 section.social-hubs ul li a {
-	display          : block;
-	width            : 48px;
-	height           : 48px;
-	margin-right     : 20px;
-	background-color : red;
+	display      : block;
+	width        : 48px;
+	height     	 : 48px;
+	margin-right : 20px;
 }
 
+section.social-hubs ul li.email a {
+	background-image : url('images/black-N-white/mail.png');
+}
 
+section.social-hubs ul li.github a {
+	background-image : url('images/black-N-white/github.png');
+}
 
+section.social-hubs ul li.plus a {
+	background-image : url('images/black-N-white/googleplus.png');
+}
 
+section.social-hubs ul li.mobile a {
+	background-image : url('images/black-N-white/linkedin.png');
+}
 
+section.social-hubs ul li.weblog a {
+	background-image : url('images/black-N-white/aboutme.png');
+}
 
+section.social-hubs ul li.email a:hover {
+	background-image : url('images/color/mail.png');
+}
 
+section.social-hubs ul li.github a:hover {
+	background-image : url('images/color/github.png');
+}
 
+section.social-hubs ul li.plus a:hover {
+	background-image : url('images/color/googleplus.png');
+}
 
+section.social-hubs ul li.mobile a:hover {
+	background-image : url('images/color/linkedin.png');
+}
 
-
-
-
+section.social-hubs ul li.weblog a:hover {
+	background-image : url('images/color/aboutme.png');
+}
