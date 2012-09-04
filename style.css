@@ -1,0 +1,23 @@
+.clear{
+	clear      : both;
+	width      : 0 !important;
+	height     : 0 !important;
+	min-height : 0 !important;
+	min-width  : 0 !important;
+	overflow   : hidden;
+	float      : none !important;
+	border     : 0 none !important;
+}
+
+.container{
+	background-image: url('images/home_bg.jpg');
+	min-height: 1000px;
+}
+
+article{
+	font-family: Helvetica, arial, freesans, clean, sans-serif;
+	color: white;
+	font-size: 110px;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
