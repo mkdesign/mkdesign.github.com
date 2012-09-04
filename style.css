@@ -20,7 +20,7 @@ article p.about span {
 
 article p.about {
 	font-family    : Helvetica, arial, freesans, clean, sans-serif;
-	color          : white;
+	color          : #dddddf;
 	font-size      : 90px;
 	font-weight    : 200;
 	letter-spacing : 2px;
@@ -46,41 +46,41 @@ section.social-hubs ul li a {
 }
 
 section.social-hubs ul li.email a {
-	background-image : url('images/black-N-white/mail.png');
+	background-image : url('images/mailw.png');
 }
 
 section.social-hubs ul li.github a {
-	background-image : url('images/black-N-white/github.png');
+	background-image : url('images/githubw.png');
 }
 
 section.social-hubs ul li.plus a {
-	background-image : url('images/black-N-white/googleplus.png');
+	background-image : url('images/googleplusw.png');
 }
 
 section.social-hubs ul li.mobile a {
-	background-image : url('images/black-N-white/linkedin.png');
+	background-image : url('images/linkedinw.png');
 }
 
 section.social-hubs ul li.weblog a {
-	background-image : url('images/black-N-white/aboutme.png');
+	background-image : url('images/aboutmew.png');
 }
 
 section.social-hubs ul li.email a:hover {
-	background-image : url('images/color/mail.png');
+	background-image : url('images/mail.png');
 }
 
 section.social-hubs ul li.github a:hover {
-	background-image : url('images/color/github.png');
+	background-image : url('images/github.png');
 }
 
 section.social-hubs ul li.plus a:hover {
-	background-image : url('images/color/googleplus.png');
+	background-image : url('images/googleplus.png');
 }
 
 section.social-hubs ul li.mobile a:hover {
-	background-image : url('images/color/linkedin.png');
+	background-image : url('images/linkedin.png');
 }
 
 section.social-hubs ul li.weblog a:hover {
-	background-image : url('images/color/aboutme.png');
+	background-image : url('images/aboutme.png');
 }
