@@ -9,14 +9,18 @@
 	border     : 0 none !important;
 }
 
-.container {
+html,body { /* ATTENTION: if You want to have a 100% height then HTML,BODY must be 100% too!!!!! */
+	height : 100%;
+}
+
+div.container {
 	background-image : url('images/home_bg.jpg');
-	padding-top      : 260px;
 	position         : relative;
+	height           : 100%; /*ATTENTION: for 100% height HTML and BODY must be 100% too!!!*/
 }
 article.about {
 	position : absolute;
-	bottom   : 40px;
+	bottom   : 80px;
 }
 
 article.about p.about {
@@ -34,16 +38,22 @@ article.about p.about span {
 }
 
 section.social-hubs {
-	background-image : url('images/bg_noise.png');
-	padding          : 10px 0px 10px 20px;
-	position         : absolute;
-	bottom           : 0;
+	background-image: url('images/bg_noise.png');
+	position        : absolute;
+	padding         : 10px 0px 10px 20px;
+	bottom          : 0;
+	left            : 0;
+	right           : 0;	
+}
+
+section.social-hubs ul {
+	
 }
 
 section.social-hubs ul li {
 	float : left;
+	
 }
-
 section.social-hubs ul li a {
 	display      : block;
 	width        : 48px;
