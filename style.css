@@ -20,12 +20,12 @@ div.container {
 }
 article.about {
 	position : absolute;
-	bottom   : 98px;
+	bottom   : 105px;
 }
 
 article.about p.about {
 	font-family    : Helvetica, arial, freesans, clean, sans-serif;
-	color          : #dddddf;
+	color          : #E8F0Fc;
 	font-size      : 90px;
 	font-weight    : 200;
 	letter-spacing : 2px;
