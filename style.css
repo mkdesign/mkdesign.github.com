@@ -12,26 +12,32 @@
 .container {
 	background-image : url('images/home_bg.jpg');
 	padding-top      : 260px;
+	position         : relative;
+}
+article.about {
+	position : absolute;
+	bottom   : 40px;
 }
 
-article p.about span {
-	font-size : 70px;
-}
-
-article p.about {
+article.about p.about {
 	font-family    : Helvetica, arial, freesans, clean, sans-serif;
 	color          : #dddddf;
 	font-size      : 90px;
 	font-weight    : 200;
 	letter-spacing : 2px;
-	margin-bottom  : 40px;
 	padding-left   : 20px;
 	text-transform : capitalize;
+}
+
+article.about p.about span {
+	font-size : 70px;
 }
 
 section.social-hubs {
 	background-image : url('images/bg_noise.png');
 	padding          : 10px 0px 10px 20px;
+	position         : absolute;
+	bottom           : 0;
 }
 
 section.social-hubs ul li {
