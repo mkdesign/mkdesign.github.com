@@ -24,7 +24,8 @@ article.about {
 }
 
 article.about p.about {
-	font-family    : Helvetica, arial, freesans, clean, sans-serif;
+	font-family: 'Marcellus SC', serif;
+	/*font-family    : Helvetica, arial, freesans, clean, sans-serif;*/
 	color          : #939393;
 	font-size      : 90px;
 	font-weight    : 200;
