@@ -32,7 +32,6 @@ article.about p.about {
 	letter-spacing : 2px;
 	padding-left   : 20px;
 	text-transform : capitalize;
-	font-style : italic;
 }
 
 article.about p.about span {
