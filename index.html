@@ -3,28 +3,185 @@
 <head>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
 	<title>Mr.Noob :)</title>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+
 </head>
 <body>
 	<div class="container">
 		<article class="about">
 			<p class="about">
-				Hi, i'm Mehrad! A noob in web.and a bass guitar player.visit my cool weblog <span>;)</span> 
+				Hi, i'm Mehrad!<br> A front-end based in Toronto. Just feel free to check my github profile <span>(:-)</span> 
 			</p>
 		</article>
 		<section class="social-hubs">
 			<ul>
-				<li class="email"><a href="#" title="mehrad[dot]kavian[at]gmail"></a></li>
+				
 				<li class="github"><a href="github.com/mkdesign" title="my github"></a></li>
 				<li class="plus"><a href="https://plus.google.com/u/0/108997610617938288482/posts" title="Plus"></a></li>
 				<li class="linkedin"><a href="http://www.linkedin.com/profile/view?id=198499367&trk=tab_pro" title="linkedin"></a></li>
-				<li class="weblog"><a href="#" title="Blog"></a></li>
+				<li class="weblog"><a href="callto:+16478066411" title="Blog"></a></li>
+				<li class="contact"><a href="#" title="contact">Reach Me.</a></li>
 				<li class="clear"></li>
 			</ul>
 		</section>
+		<div class="contact_box">
+			<div class="map_container">
+				<div id="map"></div>
+			</div>
+			
+		</div>
 	</div>
+	<script>
+      function initMap() {
+        // Styles a map in night mode.
+        var mylatlong = {lat: 43.794460, lng: -79.359540}
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: mylatlong,
+          disableDefaultUI: true,
+          zoom: 12,
+          styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.province",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 65
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": "50"
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": "-100"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "30"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": "40"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "hue": "#ffff00"
+            },
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -97
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "lightness": -25
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    }
+]
+        });
+
+        var marker = new google.maps.Marker({
+	    	position : mylatlong,
+		    map: map,
+		    icon: 'images/icons8-marker-24.png'
+		});
+
+      }
+  
+    </script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj5NglepQmKF7kt8RF7AILj2EpB5lDz3s&callback=initMap" async defer></script> 
 </body>
+
 </html>

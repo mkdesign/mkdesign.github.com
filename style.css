@@ -21,6 +21,12 @@ div.container {
 article.about {
 	position : absolute;
 	bottom   : 105px;
+	transition: all ease-out 150ms;
+}
+
+article.about.mapOpen {
+	transform: scale(0.95);
+	filter : blur(3px);
 }
 
 article.about p.about {
@@ -39,12 +45,19 @@ article.about p.about span {
 }
 
 section.social-hubs {
-	background-image: url('images/bg_noise.png');
+	
 	position        : absolute;
 	padding         : 10px 0px 10px 20px;
 	bottom          : 0;
 	left            : 0;
-	right           : 0;	
+	right           : 0;
+	transition: all ease-out 150ms;	
+}
+
+section.social-hubs.mapOpen {
+	transform: scale(0.95);
+	
+	filter : blur(3px);
 }
 
 section.social-hubs ul {
@@ -82,6 +95,15 @@ section.social-hubs ul li.weblog a {
 	background-image : url('images/aboutmew.png');
 }
 
+section.social-hubs ul li.contact a  {
+	width: auto;
+	line-height: 48px;
+	color: #aaa;
+	font-family: 'Marcellus';
+	text-decoration: none;
+	font-size: 25px;
+}
+
 section.social-hubs ul li.email a:hover {
 	background-image : url('images/mail.png');
 }
@@ -100,4 +122,39 @@ section.social-hubs ul li.linkedin a:hover {
 
 section.social-hubs ul li.weblog a:hover {
 	background-image : url('images/aboutme.png');
+}
+
+
+
+
+div.contact_box {
+	position: absolute;
+	width : 100vw;
+	height: 100vh;
+	animation-duration: 500ms;
+	opacity: 0;
+	z-index: -1;
+	transform: rotateY(-10deg);
+}
+
+div.contact_box.open {
+	transform: rotateY(0deg);
+}
+
+.map_container {
+	position: absolute;
+	width : 75vw;
+	height: 75vh;
+	left :0;
+	right : 0;
+	bottom : 0;
+	top :0;
+	margin : auto;
+	z-index: 0;
+}
+
+div.contact_box #map {
+	width : 100%;
+	height: 100%;
+
 }
