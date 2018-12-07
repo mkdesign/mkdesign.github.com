@@ -1,5 +1,6 @@
 html,body { /* ATTENTION: if You want to have a 100% height then HTML,BODY must be 100% too!!!!! */
 	height : 100%;
+	overflow: hidden;
 }
 
 .clear {
@@ -157,4 +158,40 @@ div.contact_box #map {
 	width : 100%;
 	height: 100%;
 
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 641px) {
+	article.about p.about {
+		font-size: 5.9vw;
+	}
+
+	section.social-hubs ul li a {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		background-size: 30px;
+	}
+
+	section.social-hubs ul li.contact a {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	article.about p.about {
+		font-size: 7.5vw;
+	}
+
+	section.social-hubs ul li a {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		background-size: 30px;
+	}
+
+	section.social-hubs ul li.contact a {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
