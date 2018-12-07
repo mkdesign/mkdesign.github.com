@@ -3,6 +3,11 @@ html,body { /* ATTENTION: if You want to have a 100% height then HTML,BODY must 
 	overflow: hidden;
 }
 
+*::selection{
+	background-color: #ddd;
+	color: #444;
+}
+
 .clear {
 	clear      : both;
 	width      : 0 !important;
@@ -34,15 +39,17 @@ article.about p.about {
 	font-family: 'Marcellus SC', serif;
 	/*font-family    : Helvetica, arial, freesans, clean, sans-serif;*/
 	color          : #939393;
-	font-size      : 85px;
+	font-size      : 80px;
 	font-weight    : 200;
 	letter-spacing : 2px;
 	padding-left   : 20px;
-	text-transform : capitalize;
+	
 }
 
 article.about p.about span {
-	font-size : 67px;
+	opacity: 0;
+	animation-duration: 200ms;
+	display: inline-block;
 }
 
 section.social-hubs {
@@ -84,8 +91,8 @@ section.social-hubs ul li.github a {
 	background-image : url('images/githubw.png');
 }
 
-section.social-hubs ul li.plus a {
-	background-image : url('images/googleplusw.png');
+section.social-hubs ul li.facebook a {
+	background-image : url('images/facebookw.png');
 }
 
 section.social-hubs ul li.linkedin a {
@@ -113,8 +120,8 @@ section.social-hubs ul li.github a:hover {
 	background-image : url('images/github.png');
 }
 
-section.social-hubs ul li.plus a:hover {
-	background-image : url('images/googleplus.png');
+section.social-hubs ul li.facebook a:hover {
+	background-image : url('images/facebook.png');
 }
 
 section.social-hubs ul li.linkedin a:hover {
